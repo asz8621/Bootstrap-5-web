@@ -1,0 +1,195 @@
+$tomato: #FF785E;
+
+.fa-fw{
+  vertical-align: middle;
+}
+.btn-fz{
+  font-size: 20px;
+}
+.change{
+  &.btn-primary{
+    &:hover{
+      background-color: $tomato;
+      border-color: lighten($tomato, 10%);
+      color: #fff!important;
+    }
+    &:active{
+      background-color: darken($tomato, 10%);
+      border-color: darken($tomato, 20%);
+      color: #fff!important;
+    }
+    &:focus{
+      background-color: darken($tomato, 10%);
+      border-color: darken($tomato, 20%);
+      box-shadow: 0 0 0 0.25rem rgba($tomato, 0.5);
+      color: #fff!important;
+    }
+  }
+  &.btn-outline-minor{
+    &:hover{
+      background-color: $buff;
+      border-color: lighten($buff, 10%);
+      i{
+        color: $tomato;
+        transition: 0.15s;
+      }
+    }
+    &:active{
+      background-color: darken($buff, 10%);
+      border-color: darken($buff, 20%);
+      i{
+        color: $tomato;
+        transition: 0.15s;
+      }
+    }
+    &:focus{
+      background-color: darken($buff, 10%);
+      border-color: darken($buff, 20%);
+      box-shadow: 0 0 0 0.25rem rgba($buff, 0.5);
+      i{
+        color: $tomato;
+        transition: 0.15s;
+      }
+    }
+  }
+}
+
+// nav
+.nav-bottom{
+  border-bottom: 3px solid $buff;
+  .logo{
+    width: 142px;
+  }
+}
+
+// banner
+.price{
+  line-height: 56px;
+}
+.fundraising-text{
+  border-left: 3px solid $buff;
+  border-radius: 8px 0 0 8px;
+}
+
+// project nav
+.project-link {
+  display: block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  border: 2px solid transparent;
+  &.active{
+    font-weight: bold;
+    border-bottom: 2px solid $buff;
+  }
+}
+
+// 常見問題
+.qa-number{
+  width: 28px;
+  height: 28px;
+  border-radius: 4px;
+  line-height: 28px;
+  background: $buff;
+  font-family: 'Baloo Tamma 2', cursive;
+  letter-spacing: 0.7px;
+}
+.accordion-button{
+  &:focus{
+    border-color: rgba(0, 0, 0, 0.125);
+    outline: 0;
+    box-shadow: none;
+  }
+  &:not(.collapsed){
+    color: #494846;
+  }
+}
+
+// 目前進度
+.link-more{
+  font-family: 'Baloo Tamma 2', cursive;
+  letter-spacing: 0.7px;
+}
+
+// right card
+.schedule-img{
+  width: 220px;
+  height: 100%;
+}
+.icon-link{
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+}
+.program-title{
+  border-left: 4px solid $buff;
+  border-right: 4px solid $buff;
+  border-radius: 8px;
+}
+.program-card{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 1rem;
+  .card-title{
+    font-size: 18px;
+  }
+  .card-price{
+    line-height: 41px;
+  }
+  .sponsorship-num{
+    background: #E8E8DB;
+  }
+  .description{
+    border-radius: 4px;
+    padding: 2px 16px;
+  }
+  .qty{
+    color: $buff;
+  }
+}
+
+// form
+.text-option{
+  color: #999999;
+}
+
+// footer
+.footer{
+  background: $gray-primary;
+}
+
+// modal
+.modal-border{
+  border-top: 4px solid $buff;
+}
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 768px) {
+  .btn-fz{
+    font-size: 18px;
+  }
+}
+@media (max-width: 576px) {
+  .sticky-nav.container{
+    padding: 0;
+  }
+  .schedule-img{
+    height: 132px;
+  }
+}
+@media (max-width: 480px) {
+
+}
