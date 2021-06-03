@@ -1,18 +1,27 @@
-const forms = document.querySelector("#wdwd")
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})
+
 const footer = document.querySelector(".footer")
+const form = document.querySelector(".form")
+const formM = document.querySelector(".form-m")
 const goform = document.querySelectorAll(".goform")
 const projectLink = document.querySelectorAll(".project-link")
 const stickyBottomBtn = document.querySelector(".sticky-bottom-btn")
 
+window.onload=scrollBtn()
 
-window.addEventListener('scroll', earthmove);
-
-function earthmove() {
+// scroll display btn
+window.addEventListener('scroll', scrollBtn);
+function scrollBtn() {
+  let formHeight = 0
+  form.clientHeight === 0 ? formHeight = formM.clientHeight : formHeight = form.clientHeight
   const bodyHeight = document.body.clientHeight // 網頁整體高度
   const scroll = window.scrollY
   const resolution = window.innerHeight  // 裝置高度
   const scrollAll = bodyHeight - resolution  // 取得 scroll 從上到下整體高度
-  const elHeight = forms.clientHeight + footer.clientHeight + 16 + 32 // 表單到 footer 高度含間距
+  const elHeight = formHeight + footer.clientHeight + 16 + 32 // 表單到 footer 高度含間距
   if(scroll <= scrollAll - elHeight){
     stickyBottomBtn.classList.remove('d-none')
   }else{
@@ -20,14 +29,9 @@ function earthmove() {
   }
 }
 
-
-
-
-
-
-
+// scroll go To block top
 goform.forEach(el => el.addEventListener('click', function(){
-  goScrollTo("form")
+  form.clientHeight === 0 ? goScrollTo("form-m") : goScrollTo("form")
 }));
 
 projectLink.forEach(el => el.addEventListener('click', function(){
@@ -35,31 +39,17 @@ projectLink.forEach(el => el.addEventListener('click', function(){
 }));
 
 function goScrollTo(el) {
-  let n = 0
+  // el- offsetTop 間距
   let elOffsetTop = 75
-  // n 選取元素用
-  // elOffsetTop 間距
-  if(el === 'form'){ // form 有 2 個所以要判斷 n 是 PC(0) 還是手機(1)
-    let w = window.screen.width // 裝置寬度
-    if(w < 991){
-      n = 1
-    }else{
-      n = 0
-    }
-  }
   window.scrollTo({
-    top: goToElTop(document.getElementsByClassName(el)[n]) - elOffsetTop,
+    top: goToElTop(document.getElementsByClassName(el)[0]) - elOffsetTop,
     behavior: "smooth",
   });
 }
 function goToElTop(el) {
-  // let bridge = el;
-  let root = document.body;
   let height = 0;
-  if(el !== root){
-    console.log(height);
+  if(el !== undefined){
     height += el.offsetTop;
-    console.log(height);
     el = el.offsetParent;
   }
   return height;
