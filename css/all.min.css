@@ -12454,6 +12454,10 @@ fieldset:disabled .btn {
   font-size: 20px;
 }
 
+.border-transparent {
+  border-color: transparent;
+}
+
 .change.btn-primary:hover {
   background-color: #FF785E;
   border-color: #ffa391;
