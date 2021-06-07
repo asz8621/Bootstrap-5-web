@@ -1,5 +1,9 @@
 $tomato: #FF785E;
-
+ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
 .fa-fw{
   vertical-align: middle;
 }
@@ -60,8 +64,22 @@ $tomato: #FF785E;
 // nav
 .nav-bottom{
   border-bottom: 3px solid $buff;
-  .logo{
-    width: 142px;
+}
+.logo{
+  width: 111px;
+  height: 40px;
+  background-image: url(https://hexschool.github.io/boootstrap5WebLayout/assets/logo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: block;
+  position: relative;
+  text-indent: -100%;
+  overflow: hidden;
+}
+.navbar-toggler{
+  &:focus{
+    box-shadow: none;
   }
 }
 
@@ -195,4 +213,12 @@ $tomato: #FF785E;
 }
 @media (max-width: 480px) {
 
+}
+@media (max-width: 375px) {
+  .project-nav{
+    overflow: scroll;
+    .nav{
+      width: 350px;
+    }
+  }
 }
