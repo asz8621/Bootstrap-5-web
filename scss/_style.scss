@@ -1,17 +1,7 @@
-$tomato: #FF785E;
 ul{
   list-style-type: none;
   padding: 0;
   margin: 0;
-}
-.fa-fw{
-  vertical-align: middle;
-}
-.btn-fz{
-  font-size: 20px;
-}
-.border-transparent{
-  border-color: transparent;
 }
 .change{
   &.btn-primary{
@@ -64,22 +54,8 @@ ul{
 // nav
 .nav-bottom{
   border-bottom: 3px solid $buff;
-}
-.logo{
-  width: 111px;
-  height: 40px;
-  background-image: url(https://hexschool.github.io/boootstrap5WebLayout/assets/logo.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  display: block;
-  position: relative;
-  text-indent: -100%;
-  overflow: hidden;
-}
-.navbar-toggler{
-  &:focus{
-    box-shadow: none;
+  .logo{
+    width: 111px;
   }
 }
 
@@ -199,9 +175,7 @@ ul{
 }
 
 @media (max-width: 768px) {
-  .btn-fz{
-    font-size: 18px;
-  }
+  
 }
 @media (max-width: 576px) {
   .sticky-nav.container{

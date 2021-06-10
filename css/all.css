@@ -193,7 +193,7 @@ strong {
 }
 
 small, .small {
-  font-size: 0.875rem;
+  font-size: 0.875em;
 }
 
 mark, .mark {
@@ -246,7 +246,7 @@ pre {
   margin-top: 0;
   margin-bottom: 1rem;
   overflow: auto;
-  font-size: 0.875rem;
+  font-size: 0.875em;
 }
 
 pre code {
@@ -256,7 +256,7 @@ pre code {
 }
 
 code {
-  font-size: 0.875rem;
+  font-size: 0.875em;
   color: #d63384;
   word-wrap: break-word;
 }
@@ -267,7 +267,7 @@ a > code {
 
 kbd {
   padding: 0.2rem 0.4rem;
-  font-size: 0.875rem;
+  font-size: 0.875em;
   color: #fff;
   background-color: #212529;
   border-radius: 0.2rem;
@@ -567,7 +567,7 @@ progress {
 }
 
 .initialism {
-  font-size: 0.875rem;
+  font-size: 0.875em;
   text-transform: uppercase;
 }
 
@@ -583,7 +583,7 @@ progress {
 .blockquote-footer {
   margin-top: -1rem;
   margin-bottom: 1rem;
-  font-size: 0.875rem;
+  font-size: 0.875em;
   color: #6c757d;
 }
 
@@ -615,7 +615,7 @@ progress {
 }
 
 .figure-caption {
-  font-size: 0.875rem;
+  font-size: 0.875em;
   color: #6c757d;
 }
 
@@ -2278,7 +2278,7 @@ progress {
 
 .form-text {
   margin-top: 0.25rem;
-  font-size: 0.875rem;
+  font-size: 0.875em;
   color: #6c757d;
 }
 
@@ -2981,7 +2981,7 @@ textarea.form-control-lg {
   display: none;
   width: 100%;
   margin-top: 0.25rem;
-  font-size: 0.875rem;
+  font-size: 0.875em;
   color: #198754;
 }
 
@@ -3065,7 +3065,7 @@ textarea.form-control-lg {
   display: none;
   width: 100%;
   margin-top: 0.25rem;
-  font-size: 0.875rem;
+  font-size: 0.875em;
   color: #FF785E;
 }
 
@@ -8671,14 +8671,18 @@ fieldset:disabled .btn {
 }
 
 .fs-6 {
-  font-size: 1rem !important;
+  font-size: 1.125rem !important;
 }
 
 .fs-7 {
-  font-size: 0.875rem !important;
+  font-size: 1rem !important;
 }
 
 .fs-8 {
+  font-size: 0.875rem !important;
+}
+
+.fs-9 {
   font-size: 0.75rem !important;
 }
 
@@ -9654,12 +9658,15 @@ fieldset:disabled .btn {
     font-size: 1.25rem !important;
   }
   .fs-sm-6 {
-    font-size: 1rem !important;
+    font-size: 1.125rem !important;
   }
   .fs-sm-7 {
-    font-size: 0.875rem !important;
+    font-size: 1rem !important;
   }
   .fs-sm-8 {
+    font-size: 0.875rem !important;
+  }
+  .fs-sm-9 {
     font-size: 0.75rem !important;
   }
   .text-sm-start {
@@ -10325,12 +10332,15 @@ fieldset:disabled .btn {
     font-size: 1.25rem !important;
   }
   .fs-md-6 {
-    font-size: 1rem !important;
+    font-size: 1.125rem !important;
   }
   .fs-md-7 {
-    font-size: 0.875rem !important;
+    font-size: 1rem !important;
   }
   .fs-md-8 {
+    font-size: 0.875rem !important;
+  }
+  .fs-md-9 {
     font-size: 0.75rem !important;
   }
   .text-md-start {
@@ -10996,12 +11006,15 @@ fieldset:disabled .btn {
     font-size: 1.25rem !important;
   }
   .fs-lg-6 {
-    font-size: 1rem !important;
+    font-size: 1.125rem !important;
   }
   .fs-lg-7 {
-    font-size: 0.875rem !important;
+    font-size: 1rem !important;
   }
   .fs-lg-8 {
+    font-size: 0.875rem !important;
+  }
+  .fs-lg-9 {
     font-size: 0.75rem !important;
   }
   .text-lg-start {
@@ -11667,12 +11680,15 @@ fieldset:disabled .btn {
     font-size: 1.25rem !important;
   }
   .fs-xl-6 {
-    font-size: 1rem !important;
+    font-size: 1.125rem !important;
   }
   .fs-xl-7 {
-    font-size: 0.875rem !important;
+    font-size: 1rem !important;
   }
   .fs-xl-8 {
+    font-size: 0.875rem !important;
+  }
+  .fs-xl-9 {
     font-size: 0.75rem !important;
   }
   .text-xl-start {
@@ -12338,12 +12354,15 @@ fieldset:disabled .btn {
     font-size: 1.25rem !important;
   }
   .fs-xxl-6 {
-    font-size: 1rem !important;
+    font-size: 1.125rem !important;
   }
   .fs-xxl-7 {
-    font-size: 0.875rem !important;
+    font-size: 1rem !important;
   }
   .fs-xxl-8 {
+    font-size: 0.875rem !important;
+  }
+  .fs-xxl-9 {
     font-size: 0.75rem !important;
   }
   .text-xxl-start {
@@ -12452,18 +12471,6 @@ ul {
   margin: 0;
 }
 
-.fa-fw {
-  vertical-align: middle;
-}
-
-.btn-fz {
-  font-size: 20px;
-}
-
-.border-transparent {
-  border-color: transparent;
-}
-
 .change.btn-primary:hover {
   background-color: #FF785E;
   border-color: #ffa391;
@@ -12523,22 +12530,8 @@ ul {
   border-bottom: 3px solid #FFDF65;
 }
 
-.logo {
+.nav-bottom .logo {
   width: 111px;
-  height: 40px;
-  background-image: url(https://hexschool.github.io/boootstrap5WebLayout/assets/logo.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  display: block;
-  position: relative;
-  text-indent: -100%;
-  overflow: hidden;
-}
-
-.navbar-toggler:focus {
-  -webkit-box-shadow: none;
-          box-shadow: none;
 }
 
 .price {
@@ -12655,12 +12648,6 @@ ul {
 
 .modal-border {
   border-top: 4px solid #FFDF65;
-}
-
-@media (max-width: 768px) {
-  .btn-fz {
-    font-size: 18px;
-  }
 }
 
 @media (max-width: 576px) {
